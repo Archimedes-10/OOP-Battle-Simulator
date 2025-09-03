@@ -10,8 +10,7 @@ class Hero:
     O=('-'Q)
 
     Attributes:
-        name: The name of our adventurer.
-        hp: The current health value.
+       
         strength: The amount of damage the hero can deal.
         (Bonus) defence: A hero's ability to reduce incoming damage.
         (Bonus) special_ability: A unique ability the hero can use.
@@ -20,14 +19,14 @@ class Hero:
     def __init__(self, name):
         self.name = name
         self.health = 250
-        self.attack_power = random.randint(30, 70)
+        self.strength = random.randint(30, 70)
     
 
     def strike(self):
-        self.attack = 
-        # TODO Implement the hero's attack logic. It could be stronger or more consistent than a goblin's.
+        self.attack = random.randint(10,self.strength)
     
     def receive_damage(self, damage):
+        self.take_damage = 
         # TODO Implement take_damage
         # TODO We should prevent health from going into the NEGATIVE
     
