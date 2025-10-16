@@ -17,16 +17,18 @@ class Hero:
         self.strength = random.randint(30, 70)
    
 
-    def strike(self, special_attack):
-        self.attack = random.randint(10,self.strength)
+    def strike(self):
+        return random.randint(10,self.strength)
     
     def receive_damage(self, damage):
-        self.take_damage = self.health - damage
-        if self.take_damage
+        self.health = self.health - damage
+        if self.health < 0:
+            self.health = 0 
 
 
-    def living(self):  
-        self.health >0
+    def is_alive(self):  
+        return self.health > 0
+        
         # TODO We should prevent health from going into the NEGATIVE
     
     #TODO define is_alive

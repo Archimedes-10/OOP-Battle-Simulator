@@ -1,6 +1,6 @@
-from enemy import Kenny_Clark
+from enemy import Jim
 
-class baby_elf(Kenny_Clark):
+class baby_elf(Jim):
     def cry():
         #New attribute
         print("WAAAHHHHHHHHHH")
